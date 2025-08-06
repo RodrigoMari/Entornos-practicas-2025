@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercitación 4 - UTN</title>
+</head>
+<body>
+
+  <!-- Imagen con enlace al sitio web de la Universidad -->
+  <a href="https://www.utn.edu.ar" target="_blank">
+    <img style="height: 60px;" src="utn-logo.jpg" alt="UTN-FRRO">
+  </a>
+
+  <!-- Línea horizontal -->
+  <hr>
+
+  <!-- Título principal -->
+  <h1>AÑO 2008</h1>
+
+  <!-- Tabla con fecha de modificación y aprobados -->
+  <table border="1" width="300">
+    <tr>
+      <th colspan="2">Exámenes</th>
+    </tr>
+    <tr>
+      <td>
+        Fecha:
+        <script>
+          // Fecha de última modificación del archivo
+          document.write(new Date(document.lastModified).toLocaleDateString("es-AR"));
+        </script>
+      </td>
+      <td align="center">Aprobados<br>24/30</td>
+    </tr>
+  </table>
+
+  <!-- Lista ordenada con enlaces -->
+  <ol>
+    <li><a href="#enunciado">Enunciado del examen</a></li>
+    <li><a href="resolucion.html" target="_blank">Resolución</a></li>
+  </ol>
+
+  <!-- Formulario que se envía por correo electrónico -->
+  <p>Puede realizar consultas completando el siguiente formulario:</p>
+
+  <form action="mailto:xx@xx.com" method="post" enctype="text/plain">
+    <table>
+      <tr>
+        <td><label for="email">e-mail:</label></td>
+        <td><input type="text" name="email" id="email" size="30"></td>
+      </tr>
+      <tr>
+        <td><label for="consulta">consulta:</label></td>
+        <td><textarea name="consulta" id="consulta" rows="4" cols="30"></textarea></td>
+      </tr>
+    </table>
+    <br>
+    <input type="submit" value="ENVIAR">
+    <input type="reset" value="BORRAR">
+  </form>
+
+  <!-- Subtítulo y bloque de texto -->
+  <h2 id="enunciado">Enunciado del examen</h2>
+  <p>Ejercicio 1: Explicar brevemente qué es HTML y su utilidad en el desarrollo web.</p>
+  <p>Ejercicio 2: Crear una tabla con al menos 2 filas y 2 columnas utilizando HTML.</p>
+
+  <!-- Enlace a correo -->
+  <p>Para más información dirigirse a 
+    <a href="mailto:contacto@xx.com">contacto@xx.com</a>
+  </p>
+
+</body>
+</html>

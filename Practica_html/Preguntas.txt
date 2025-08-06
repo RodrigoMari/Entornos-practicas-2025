@@ -1,0 +1,149 @@
+1a) HTML (HyperText Markup Language) es el lenguaje de marcado estándar que los navegadores web interpretan 
+para estructurar documentos con texto, imágenes, hipervínculos, etc. 
+Origen y creación: desarrollado por Tim Berners‑Lee en el CERN, entre 1989 y 1991, publicándose el primer 
+borrador en 1993 con unas 18 etiquetas iniciales.
+
+HTML 1.0 (década de 1991‑1993, ~18 etiquetas)
+HTML 2.0 (1995, primer estándar del IETF)
+HTML 3.2 (1997)
+HTML 4.0
+
+La ultima version es la HTML5 o la HTML5.2
+
+1b) 
+-Estructura semántica clara: uso apropiado de elementos
+-Separación de presentación y contenido: evitar elementos de presentación
+-Accesibilidad y compatibilidad internacional: incluir atributos alt, soporte para hojas de estilo, scripts, y 
+utilizar codificación universal
+-Validación y conformidad: seguir las reglas de conformidad, usar DTDs correctos, y hacer documentos validables
+
+1c) Un elemento o atributo deprecated es aquel desalentado, no debe usarse en nuevos documentos, pero los navegadores 
+deberían seguir soportándolo.
+
+Un elemento obsolete se considera puramente histórico, no definido formalmente y no requiere soporte por 
+parte del navegador (aunque en la práctica muchos aún funcionan).
+
+1d) DTD (Document Type Definition) es una definición de la gramática SGML/HTML que formaliza la sintaxis 
+permitida en un documento HTML. Se declara al inicio del archivo con <!DOCTYPE …>.
+
+
+HTML 4.01 contempla tres variantes de DTD:
+    Strict (no permite presentational markup),
+    Transitional (permitiendo elementos y atributos deprecated para compatibilidad),
+    Frameset (para documentos que usan <frameset>).
+
+1e) Metadatos son datos sobre el documento web: autor, descripción, palabras clave, codificación, tipo de 
+contenido, etc. Ayudan a motores de búsqueda, navegadores y herramientas a interpretar el contenido.
+
+2a) <!-- Código controlado el día 12/08/2009 →
+Comentario, se puede poner en cualquier parte del código y funciona como texto plano
+
+2b) <div id="bloque1">Contenido del bloque1</div>
+Bloque con id="bloque1" que tiene como contenido un texto plano, puede ir en cualquier parte del 
+codigo mientras este dentro del body
+
+2c) <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+Imagen de 32x32 con una descripción incompleta y sin direccion de la ubicacion de la imagen
+
+2d) <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+Define un metadato de nombre "keywords" que tiene palabras en español, estas son casa, compra, venta y alquilera
+El contenido de este metadato expirará el 16 de septiembre de 2019 a las 7:49pm
+
+2e) <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+Casilla de texto que tiene un link clickeable, mantiene el tipo text, lenguaje en español y regla de conformidad
+
+2f) <table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+    <tr>
+        <th scope="col">&nbsp;</th>
+            <th scope="col">A</th>
+            <th scope="col">B</th>
+            <th scope="col">C</th>
+    </tr>
+    <tr>
+        <th scope="row">1º</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th scope="row">2º</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+    </tr>
+</table>
+
+Tabla de 200px de ancho con un texto, este tiene un caption alineado en top con la palabra "Título" dentro. 
+Tiene 3 letras como titulo de columna y un 1° y 2° como titulos de filas
+
+3a) 
+-Hipervinculo a google
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+-Hipervinculo a google en pestaña nueva
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+-Codigo incorrecto
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+-Hace referencia a un marcador o ancla, en este caso vacio. No muestra nada
+<a href="#">Click aquí para ir a Google</a>
+-Hace referencia a un marcador o ancla, en este caso  a una seccion que tiene el marcador "#arriba"
+<a href="#arriba">Click aquí para volver arriba</a>
+-Destino al que apunta el enlace anterior
+<a name="arriba" id="arriba"></a>
+
+3b)
+-Imagen de direccion carpeta actual/im1.jpg y un hipervinculo. Solo el texto "Click aquí" es clickeable.
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+-Imagen clickeable con hipervinculo relacionado
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+-Toda la combinación de imagen + texto "Click aquí" es un solo enlace. Forman 1 sola cosa la imagen y el texto
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+-Crea dos enlaces separados pero con el mismo destino (Google). Uno con la imagen y otro con el texto
+<p>
+    <a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a>
+    <a href="http://www.google.com.ar">Click aquí</a>
+</p>
+
+3c)
+-Lista no ordenada (con viñetas)
+-Lista ordenada automática
+-Se simula continuidad manual entre listas ordenadas
+-Simula una lista numerada, pero no es una lista real. Tiene formato de cita
+
+3d)
+-Visualización alineada automáticamente al centro con bordes
+-Misma estructura de datos, pero en lugar de <th> usa <td> con <div align="center">. Da más control visual
+
+3e)
+Dos tablas, una con <caption> y otra con <td colspan="3">. Ambas agregan un "título" visual.
+Usan bgcolor="#dddddd" para sombrear las celdas. Se usan diferentes formas de centrar el texto: una usa 
+<caption>, otra usa <div align="center">.
+
+3f)
+-Agrupa 3 columnas con el título. La primera celda ocupa dos filas hacia abajo 
+-Agrupa 2 columnas horizontalmente. Se combina colspan con celdas normales
+
+3g)
+-Usa colspan="2" y rowspan="2" en la misma celda, que abarca dos filas y dos columnas
+-Incluye propiedades de espaciado cellpadding="0" y cellspacing="0" para 
+controlar márgenes internos y externos.
+
+3h)
+-Formulario que postea llamando a procesar.php
+-Formulario que trae informacion, en este caso no trae por estar vacia la llamada
+-Formulario que envia por correo con metodo post
+
+3i)
+-Permite contenido mixto (imagen + texto)
+-Solo acepta texto
+
+3j)
+-Todos los botones tienen el mismo name, por lo tanto se comportan como una sola opción a elegir
+-Tienen nombres distintos, por lo tanto se pueden seleccionar ambos a la vez. No deseado
+
+3k)
+-Lista desplegable de seleccion unica
+-Lista desplegable de seleccion multiple
