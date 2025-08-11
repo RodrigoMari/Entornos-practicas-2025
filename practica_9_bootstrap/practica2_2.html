@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de grillas ejemplo 2</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .header {
+        background-color: #a67ba6;
+        height: 80px;
+        margin-bottom: 20px;
+      }
+
+      .sidebar {
+        background-color: #f4d7d7;
+        min-height: 300px;
+      }
+
+      .nav-bar {
+        background-color: #6cb56c;
+        height: 60px;
+        margin-bottom: 20px;
+      }
+
+      .content-box {
+        background-color: #8a7a8a;
+        height: 80px;
+        margin-bottom: 15px;
+      }
+
+      .footer-left {
+        background-color: #6b9bd6;
+        height: 150px;
+      }
+
+      .footer-right {
+        background-color: #6b9bd6;
+        height: 150px;
+      }
+
+      .container-fluid {
+        padding: 20px;
+      }
+
+      @media (max-width: 767.98px) {
+        .sidebar {
+          min-height: 100px;
+          margin-bottom: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Header -->
+      <div class="row">
+        <div class="col-12">
+          <div class="header"></div>
+        </div>
+      </div>
+
+      <!-- md -->
+      <div class="d-none d-md-block">
+        <div class="row">
+          <!-- Sidebar -->
+          <div class="col-md-3">
+            <div class="sidebar"></div>
+          </div>
+
+          <!-- Main Content Area -->
+          <div class="col-md-9">
+            <!-- Navbar -->
+            <div class="row">
+              <div class="col-12">
+                <div class="nav-bar"></div>
+              </div>
+            </div>
+
+            <!-- Content Boxes -->
+            <div class="row">
+              <div class="col-4">
+                <div class="content-box"></div>
+              </div>
+              <div class="col-4">
+                <div class="content-box"></div>
+              </div>
+              <div class="col-4">
+                <div class="content-box"></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4">
+                <div class="content-box"></div>
+              </div>
+              <div class="col-4">
+                <div class="content-box"></div>
+              </div>
+              <div class="col-4">
+                <div class="content-box"></div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="row">
+              <div class="col-6">
+                <div class="footer-left"></div>
+              </div>
+              <div class="col-6">
+                <div class="footer-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sm -->
+      <div class="d-block d-md-none">
+        <!-- Sidebar -->
+        <div class="row">
+          <div class="col-12">
+            <div class="sidebar"></div>
+          </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="row">
+          <div class="col-12">
+            <div class="nav-bar"></div>
+          </div>
+        </div>
+
+        <!-- Content Boxes -->
+        <div class="row">
+          <div class="col-6">
+            <div class="content-box"></div>
+          </div>
+          <div class="col-6">
+            <div class="content-box"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="content-box"></div>
+          </div>
+          <div class="col-6">
+            <div class="content-box"></div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="row">
+          <div class="col-6">
+            <div class="footer-left"></div>
+          </div>
+          <div class="col-6">
+            <div class="footer-right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

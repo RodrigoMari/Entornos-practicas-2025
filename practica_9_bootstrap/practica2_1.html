@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de grillas ejemplo 1</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .col-content {
+        height: 60px;
+        margin-bottom: 10px;
+      }
+      .col-purple {
+        background-color: #9d7db3;
+      }
+      .col-peach {
+        background-color: #f2d7c4;
+      }
+      .col-pink {
+        background-color: #d4a5a5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container p-5">
+      <!-- md -->
+      <div class="d-none d-md-block">
+        <div class="row">
+          <div class="col-12">
+            <div class="col-content col-purple"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="col-content col-peach"></div>
+          </div>
+          <div class="col-6">
+            <div class="col-content col-pink"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- sm -->
+      <div class="d-block d-md-none">
+        <div class="row">
+          <div class="col-12">
+            <div class="col-content col-purple"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="col-content col-peach"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="col-content col-pink"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
