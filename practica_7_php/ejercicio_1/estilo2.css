@@ -1,0 +1,8 @@
+body {
+    background-color: beige;
+    color: darkgreen;
+    font-family: Verdana, sans-serif;
+}
+h1 {
+    border-bottom: 2px dashed darkgreen;
+}

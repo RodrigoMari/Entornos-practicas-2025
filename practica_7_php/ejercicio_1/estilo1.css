@@ -1,0 +1,8 @@
+body {
+    background-color: lightblue;
+    color: navy;
+    font-family: Arial, sans-serif;
+}
+h1 {
+    border-bottom: 2px solid navy;
+}
